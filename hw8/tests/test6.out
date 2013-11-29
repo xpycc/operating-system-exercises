@@ -1,0 +1,10 @@
+385db>> b 8
+breakpoint 0 set at line 8
+385db>> c
+breakpoint 0 hit
+385db>> bt
+#0 anotherFunction(arg1=5, arg2=10) at tests/prog1.c:8
+#1 main() at tests/prog1.c:18
+385db>> q
+quit
+hello world 5 10

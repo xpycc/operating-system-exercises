@@ -1,0 +1,26 @@
+#!./hw4 
+echo * Echo seems to work
+
+echo * Now the directory contents:
+ls
+
+echo * Now the number of files:
+ls | wc -l
+
+echo * Now we should see "Hello World":
+echo Hello World > /tmp/hwfile
+cat <  /tmp/hwfile
+cat < /tmp/hwfile > /tmp/hwfile2
+cat /tmp/hwfile  /tmp/hwfile2 > /tmp/doublefile 
+
+echo * Now we should see a number "2", for the number of lines, in /tmp/countfile
+cat < /tmp/doublefile | wc -l  > /tmp/countfile
+
+echo * And now the contents of /tmp/countfile
+cat /tmp/countfile
+
+echo * Now a list of file sizes 
+ls -l | sort -n -k 5 | cut -c 27-34
+
+echo * And finally "hello world hello world"
+./hw4 echo.hw4 hello world

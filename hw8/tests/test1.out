@@ -1,0 +1,17 @@
+385db>> b 16
+breakpoint 0 set at line 16
+385db>> c
+breakpoint 0 hit
+385db>> p /d sum
+0
+385db>> p /d i
+0
+385db>> c
+breakpoint 0 hit
+385db>> p /d sum
+10
+385db>> p /d i
+1
+385db>> q
+quit
+hello world 5 10

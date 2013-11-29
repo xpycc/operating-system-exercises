@@ -1,0 +1,8 @@
+385db>> b 13
+breakpoint 0 set at line 13
+385db>> c
+breakpoint 0 hit
+385db>> where
+line 13 in tests/prog1.c
+385db>> c
+hello world 5 10

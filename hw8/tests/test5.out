@@ -1,0 +1,42 @@
+385db>> b 16
+breakpoint 0 set at line 16
+385db>> c
+breakpoint 0 hit
+385db>> p /d sum
+0
+385db>> c
+breakpoint 0 hit
+385db>> p /d sum
+10
+385db>> p /d k
+10
+385db>> b 8
+breakpoint 1 set at line 8
+385db>> c
+breakpoint 0 hit
+385db>> c
+breakpoint 0 hit
+385db>> c
+breakpoint 0 hit
+385db>> p /d sum
+40
+385db>> c
+breakpoint 0 hit
+385db>> c
+breakpoint 0 hit
+385db>> c
+breakpoint 0 hit
+385db>> p /d sum
+70
+385db>> c
+breakpoint 0 hit
+385db>> c
+breakpoint 0 hit
+385db>> c
+breakpoint 1 hit
+385db>> p /d arg1
+5
+385db>> p /s mystring
+"hello friend"
+385db>> c
+hello world 5 10
